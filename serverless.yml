@@ -50,10 +50,7 @@ functions:
           path: todos/translate/{id}/{language}
           method: get
           cors: true
-  #        request:
-  #           template:
-  #               application/json: '{ "id" : "$input.params(''id'')" , "language" : "$input.params(''language'')" } '
-
+  
   update:
     handler: todos/update.update
     events:
